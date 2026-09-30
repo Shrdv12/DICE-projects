@@ -1,0 +1,1 @@
+Demo data. Bottom line: the app needs one job, not ten stupid half-built ones. Paste text, run the check, show the score, explain the signal. No bloated menus. No fake certainty. If the sample is too short, just say that and move on.

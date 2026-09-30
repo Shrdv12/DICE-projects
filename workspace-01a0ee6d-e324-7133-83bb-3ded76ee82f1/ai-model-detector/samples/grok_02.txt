@@ -1,0 +1,1 @@
+Demo data. Here's the thing: a detector like this will never be magic. It can spot patterns, not read the model's mind. Keep the output blunt. Show the winner, show the other scores, and don't dress up a crap guess as science.

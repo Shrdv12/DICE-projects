@@ -1,0 +1,1 @@
+Demo data. No fluff: Grok-like text tends to be short, direct, and less polished around the edges. It usually avoids long helper intros and corporate-smooth closers. When something is stupid, it says the point plainly instead of wrapping it in a lecture.

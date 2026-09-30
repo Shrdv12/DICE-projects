@@ -1,0 +1,1 @@
+Demo data. It depends on the kind of answer being tested 🙂 Short factual replies are hard to attribute because several systems can produce the same clean sentence. Longer responses give more signal: paragraph rhythm, caveats, transitions, and closing behavior all become easier to compare without pretending the estimate is certain.

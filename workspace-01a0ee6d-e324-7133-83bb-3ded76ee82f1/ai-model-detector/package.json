@@ -1,0 +1,9 @@
+{
+  "name": "ai-model-detector-prototype",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8000 --bind 0.0.0.0",
+    "test": "node tests/test_engine.mjs && node tests/run_samples.mjs"
+  }
+}

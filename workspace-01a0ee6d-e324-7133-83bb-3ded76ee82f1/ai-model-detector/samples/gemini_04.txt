@@ -1,0 +1,11 @@
+Demo data.
+
+## Action Plan
+
+Run this command to serve the prototype locally, then validate the result screen with several pasted examples.
+
+```bash
+python3 -m http.server 8000 --bind 0.0.0.0
+```
+
+Next, extract the following values from each test: word count, markdown density, transition markers, and confidence. Fundamentally, the workflow should remain deterministic.

@@ -1,0 +1,1 @@
+Demo data. That said, a useful prototype should be honest about what it can and cannot show 😊 The detector can compare structure, punctuation, and phrasing, but it should not overstate the result. Text style is not a fingerprint, and I'd be happy to help refine the profiles as more examples are collected.

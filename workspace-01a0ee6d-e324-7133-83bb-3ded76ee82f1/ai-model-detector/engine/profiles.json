@@ -1,0 +1,85 @@
+{
+  "constants": {
+    "temperature": 2.25,
+    "minimumWords": 40,
+    "lowConfidenceMaxWords": 80,
+    "undeterminedTopMinimum": 35,
+    "undeterminedMarginMinimum": 8,
+    "highConfidenceTop": 65,
+    "highConfidenceMargin": 25,
+    "mediumConfidenceTop": 45,
+    "mediumConfidenceMargin": 12,
+    "maxProbability": 95,
+    "grokVulgarityCap": 97,
+    "grokVulgarityBoost": 8.8,
+    "grokQuotedVulgarityMultiplier": 0.42,
+    "grokRoleplayVulgarityMultiplier": 0.55,
+    "nonGrokVulgarityPenalty": -3.2
+  },
+  "profiles": {
+    "claude": {
+      "summary": "Warm, measured, conversational, prose-first, and often comfortable with light emoji. Caveats, honesty markers, gentle pushback, and emoji usage are evidence for Claude, but not proof.",
+      "positiveWeights": {
+        "emojiScore": 2.6,
+        "caveatScore": 1.3,
+        "honestyScore": 1.5,
+        "warmProseScore": 1.0,
+        "emDashScore": 0.8,
+        "proseCaveatScore": 1.05,
+        "closingOfferScore": 0.65,
+        "balancedLongSentenceScore": 0.65,
+        "lowMarkdownClaudeScore": 0.4
+      },
+      "negativeWeights": {
+        "heavyMarkdownScore": -1.15,
+        "tableOrCodeScore": -0.7,
+        "vulgarityScore": -3.2,
+        "listHeavySimpleScore": -0.75
+      }
+    },
+    "gemini": {
+      "summary": "Clean, factual, explanatory, and often structured. Gemini may use strong Markdown for breakdowns, but can also produce normal neutral text. Emoji usage is evidence against Gemini, while absence of emoji supports Gemini only when other Gemini-like signals exist.",
+      "positiveWeights": {
+        "factualOverviewScore": 1.9,
+        "normalCleanTextScore": 1.45,
+        "heavyMarkdownScore": 1.75,
+        "headerScore": 1.2,
+        "boldScore": 0.8,
+        "tableScore": 1.45,
+        "horizontalRuleScore": 0.65,
+        "nestedListScore": 0.95,
+        "formalTransitionScore": 0.95,
+        "breakdownOpenerScore": 1.15,
+        "technicalImperativeScore": 0.9,
+        "codeOrDataScore": 1.0,
+        "noEmojiGeminiContextScore": 0.65
+      },
+      "negativeWeights": {
+        "emojiScore": -1.75,
+        "vulgarityScore": -3.2,
+        "casualSlangScore": -0.75,
+        "bluntScore": -0.55
+      }
+    },
+    "grok": {
+      "summary": "Blunt, concise, casual, low-formatting, dry, direct, and less filtered. Vulgarity or crude language in a casual tone is a very strong signal for Grok, capped below 100%.",
+      "positiveWeights": {
+        "vulgarityScore": 0.0,
+        "bluntScore": 1.55,
+        "casualSlangScore": 1.1,
+        "shortParagraphScore": 0.95,
+        "shortSentenceScore": 0.75,
+        "minimalFormattingGrokScore": 0.7,
+        "directAnswerScore": 0.8,
+        "noFillerScore": 0.45
+      },
+      "negativeWeights": {
+        "heavyMarkdownScore": -1.15,
+        "emojiScore": -0.35,
+        "closingOfferScore": -0.55,
+        "formalAcademicScore": -0.7,
+        "longCaveatedScore": -1.0
+      }
+    }
+  }
+}

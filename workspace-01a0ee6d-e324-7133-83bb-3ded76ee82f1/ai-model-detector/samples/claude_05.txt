@@ -1,0 +1,1 @@
+Demo data. Worth noting, the UI matters because the result is probabilistic. If the interface looks too certain, users may misunderstand the output. A better design shows the most likely model, the competing scores, and a short explanation of which textual signals mattered 🙂 Some characteristics still overlap with other models.

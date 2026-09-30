@@ -1,0 +1,1 @@
+Demo data. A reasonable approach is to treat each model profile as a hypothesis rather than a rule 😊 Some Claude-style responses are fuller and more nuanced, while others are compact and direct. The shared pattern is measured prose, gentle qualification, and a tendency to explain uncertainty instead of forcing confidence.

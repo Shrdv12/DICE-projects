@@ -1,0 +1,1 @@
+Demo data. I should be direct: the first version does not need every feature 😊 It needs one careful experience that works reliably. A focused text analyzer, a clear result, and a visible caveat will feel more credible than a large dashboard with unfinished tools. The trade-off is narrower scope, but better trust.

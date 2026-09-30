@@ -1,0 +1,17 @@
+Demo data.
+
+### Implementation Notes
+
+- **Inputs**
+  - Raw text only
+  - No images, files, or audio
+- **Outputs**
+  - Most likely model
+  - Sorted probabilities
+  - Confidence label
+- **Edge cases**
+  - Short text
+  - Ambiguous text
+  - Quoted self-identification
+
+Furthermore, each branch should return a stable result object, and the details panel should expose raw feature values for inspection.

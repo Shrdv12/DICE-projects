@@ -1,0 +1,51 @@
+{
+  "mild": [
+    "damn",
+    "crap",
+    "sucks",
+    "stupid",
+    "idiot",
+    "idiotic",
+    "dumb",
+    "nonsense",
+    "trash",
+    "garbage"
+  ],
+  "strong": [
+    "fuck",
+    "fucking",
+    "shit",
+    "bullshit",
+    "asshole",
+    "bastard",
+    "bitch",
+    "dick",
+    "prick",
+    "moron"
+  ],
+  "contextReducers": [
+    "quoted",
+    "quote",
+    "dialogue",
+    "story",
+    "roleplay",
+    "role-play",
+    "character",
+    "he said",
+    "she said",
+    "they said",
+    "the line",
+    "the word"
+  ],
+  "warningTone": [
+    "avoid using",
+    "do not use",
+    "offensive language",
+    "inappropriate language",
+    "harmful language",
+    "I can't help",
+    "I cannot help",
+    "should not",
+    "not appropriate"
+  ]
+}

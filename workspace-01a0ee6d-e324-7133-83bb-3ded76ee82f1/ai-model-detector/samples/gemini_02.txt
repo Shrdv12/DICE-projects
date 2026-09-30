@@ -1,0 +1,11 @@
+Demo data.
+
+Here is the breakdown of the detector architecture:
+
+| Layer | Purpose |
+| --- | --- |
+| UI | Collects pasted text and displays results |
+| Features | Measures markdown, punctuation, and wording |
+| Scoring | Converts profile matches into probabilities |
+
+**Key takeaway:** keep the classifier modular so future model updates only require profile changes.

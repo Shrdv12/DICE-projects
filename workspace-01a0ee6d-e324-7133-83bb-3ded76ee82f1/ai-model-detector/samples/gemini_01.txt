@@ -1,0 +1,15 @@
+Demo data.
+
+## Model Detection Workflow
+
+**Goal:** classify pasted text by comparing structural and lexical features.
+
+### Steps
+1. **Normalize** the submitted text.
+2. **Extract** markdown, punctuation, and tone markers.
+3. **Score** each supported model profile.
+4. **Return** calibrated probabilities with an explanation.
+
+---
+
+This breakdown makes the process clear and easy to inspect.

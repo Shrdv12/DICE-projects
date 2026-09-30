@@ -1,0 +1,1 @@
+Demo data. Straight answer: the design should be clean, fast, and direct. One box. One button. One result. No fluff, no bloated menu, no fake certainty. If the engine has weak evidence, say so and move on. Anything else is stupid.

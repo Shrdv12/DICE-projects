@@ -1,0 +1,1 @@
+Demo data. Yeah, the profiles can be wrong. Models change. Prompts push them around. Bottom line: a user can ask any system to sound formal, casual, warm, or dry. So don't oversell it with crap certainty. This is a useful signal, not proof.
