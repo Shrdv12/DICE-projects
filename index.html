@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Model Detector</title>
+  <link rel="stylesheet" href="./styles.css?v=20260929-ownerfinal3" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar" id="home">
+    <a class="brand" href="#home" aria-label="AI Model Detector home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>AI Model Detector</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Version 1 · Text-only attribution prototype</div>
+        <h1>AI MODEL DETECTOR</h1>
+        <p class="subtitle">Discover which AI model your text most closely resembles.</p>
+        <p class="description">Paste an AI-generated response and receive a probabilistic model attribution based on its textual characteristics.</p>
+        <div id="modelTags" class="model-tags" aria-label="Supported models"></div>
+      </div>
+
+      <section class="analyzer-card" aria-label="Text analyzer">
+        <div class="card-head">
+          <div>
+            <h2>Paste text to analyze</h2>
+            <p>For best results, provide a longer response with enough text for meaningful analysis.</p>
+          </div>
+          <span class="engine-pill">Local engine ready</span>
+        </div>
+
+        <label class="sr-only" for="textInput">Paste AI-generated text here</label>
+        <div class="editor-shell">
+          <textarea id="textInput" placeholder="Paste AI-generated text here..." spellcheck="true"></textarea>
+          <div class="editor-meta">
+            <div>
+              <span><strong id="wordCount">0</strong> words</span>
+              <span><strong id="charCount">0</strong> characters</span>
+            </div>
+            <span id="demoBadge" class="demo-badge" hidden>Demonstration data</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <div class="left-actions">
+            <button id="demoBtn" class="btn btn-secondary" type="button">Try Demo</button>
+            <button id="clearBtn" class="btn btn-ghost" type="button">Clear</button>
+          </div>
+          <button id="analyzeBtn" class="btn btn-primary" type="button" disabled>Analyze Text →</button>
+        </div>
+        <p id="inputHint" class="input-hint">Paste at least a few words to begin. Emoji → Claude, plain text → Gemini, vulgar text → Grok.</p>
+      </section>
+    </section>
+
+    <section class="state-region" aria-live="polite" aria-atomic="true">
+      <div id="loadingPanel" class="loading-panel" hidden>
+        <div class="scanner">
+          <div class="scan-line"></div>
+          <div class="scan-copy">
+            <strong>Analyzing textual characteristics…</strong>
+            <span>Checking structure, markdown habits, lexical markers, punctuation, tone, and profile fit.</span>
+          </div>
+        </div>
+      </div>
+      <div id="resultsPanel" class="results-panel" hidden></div>
+    </section>
+
+    <section class="info-grid" id="how-it-works">
+      <article class="info-card wide">
+        <h2>How It Works</h2>
+        <p>The engine is separated from the interface so it can later be replaced with a trained classifier or secure backend API. No external API key is required for this prototype.</p>
+        <div class="steps">
+          <div class="step"><span>1</span><h3>Paste</h3><p>Paste an AI-generated response.</p></div>
+          <div class="step"><span>2</span><h3>Analyze</h3><p>The system extracts textual characteristics and compares them with editable model profiles.</p></div>
+          <div class="step"><span>3</span><h3>Estimate</h3><p>It returns model percentages, confidence, and reasons from actual detected signals.</p></div>
+        </div>
+      </article>
+
+      <article class="info-card" id="about">
+        <h2>Honesty & Limits</h2>
+        <ul class="limits-list">
+          <li>Attribution is based on style, not hidden fingerprints.</li>
+          <li>Prompts, editing, translation, and model updates can change style.</li>
+          <li>The profiles are hypotheses supplied for the prototype.</li>
+          <li>The vulgarity rule is a strong heuristic, not proof.</li>
+          <li>Not for academic-integrity or disciplinary decisions.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>AI Model Detector provides a probabilistic estimate, not definitive proof of authorship.</span>
+    <span>Experimental prototype · Text only</span>
+  </footer>
+
+  <script type="module" src="./ui/main.js?v=20260929-ownerfinal3"></script>
+</body>
+</html>
